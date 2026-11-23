@@ -1,0 +1,16 @@
+services:
+  - type: web
+    name: lablink
+    runtime: node
+    plan: free
+    region: oregon
+    buildCommand: npm install && npm run build
+    startCommand: npm start
+    healthCheckPath: /healthz
+    envVars:
+      - key: NODE_VERSION
+        value: 22.12.0
+      - key: DEMO_MODE
+        value: "true"
+      - key: NODE_ENV
+        value: production

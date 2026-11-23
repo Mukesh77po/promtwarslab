@@ -10,7 +10,7 @@
   "scripts": {
     "start": "node src/server.js",
     "dev": "node --watch src/server.js",
-    "build": "node -e \"const fs=require('fs'); fs.cpSync('node_modules/three/build','public/vendor/three',{recursive:true}); console.log('three.js vendored');\"",
+    "build": "node scripts/build.js",
     "lint": "eslint src/ --max-warnings=0",
     "test": "node --experimental-vm-modules --test test/**/*.test.js",
     "test:coverage": "node --experimental-vm-modules --test --experimental-test-coverage test/**/*.test.js",
