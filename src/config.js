@@ -35,6 +35,30 @@ export const WEIGHT_FAIRNESS    = 0.25;
 export const WEIGHT_SPECIFICITY = 0.20;
 export const WEIGHT_FEASIBILITY = 0.15;
 
+// ── Scheduler algorithms & constants ─────────────────────────────────────────
+export const SCORE_EXP_DECAY            = 0.05;
+export const FAIRNESS_PENALTY           = 0.04;
+export const SPECIFICITY_PENALTY        = 0.3;
+export const SWAP_DAYS_THRESHOLD        = 2;
+export const MAX_FREE_SLOT_SEARCH_DAYS  = 60;
+export const SLOT_DURATION_MS           = 3_600_000;
+export const DEFAULT_PROJECT_HOURS      = 10;
+export const MAX_LAB_DISTANCE           = 10;
+export const MS_PER_DAY                 = 86_400_000;
+
+// ── HTTP Status Codes ────────────────────────────────────────────────────────
+export const HTTP_STATUS = {
+  OK: 200,
+  CREATED: 201,
+  BAD_REQUEST: 400,
+  UNAUTHORIZED: 401,
+  FORBIDDEN: 403,
+  NOT_FOUND: 404,
+  CONFLICT: 409,
+  TOO_MANY_REQUESTS: 429,
+  INTERNAL_ERROR: 500,
+};
+
 // ── Booking slot parameters ──────────────────────────────────────────────────
 export const SLOT_HOURS            = 1;         // each slot is 1 hour
 export const SLOT_DAY_START        = 8;         // 08:00

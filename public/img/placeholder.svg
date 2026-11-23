@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="300" viewBox="0 0 400 300" role="img" aria-label="Equipment photo not available">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1e293b"/>
+      <stop offset="100%" stop-color="#0f172a"/>
+    </linearGradient>
+  </defs>
+  <rect width="400" height="300" rx="12" fill="url(#bgGrad)"/>
+  <rect x="100" y="70" width="200" height="140" rx="10" fill="#334155" stroke="#64748b" stroke-width="2"/>
+  <circle cx="160" cy="125" r="24" fill="#475569"/>
+  <path d="M120 185 L180 135 L220 165 L250 145 L280 185 Z" fill="#64748b" opacity="0.7"/>
+  <text x="200" y="245" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="14" font-weight="500" fill="#94a3b8">Photo not available</text>
+</svg>

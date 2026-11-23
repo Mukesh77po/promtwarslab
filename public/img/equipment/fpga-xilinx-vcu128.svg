@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="300" viewBox="0 0 400 300" role="img" aria-label="Xilinx VCU128 FPGA Evaluation Board illustration">
+  <defs>
+    <linearGradient id="bg-fpga-xilinx-vcu128" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f172a"/>
+      <stop offset="100%" stop-color="#1e293b"/>
+    </linearGradient>
+  </defs>
+  <rect width="400" height="300" rx="12" fill="url(#bg-fpga-xilinx-vcu128)"/>
+  
+        <rect x="50" y="55" width="300" height="185" rx="10" fill="#1e1b4b" stroke="#6366f1" stroke-width="2"/>
+        <rect x="125" y="90" width="110" height="110" rx="6" fill="#0f172a" stroke="#818cf8" stroke-width="2.5"/>
+        <rect x="145" y="110" width="70" height="70" rx="4" fill="#312e81"/>
+        <text x="180" y="150" fill="#a5b4fc" font-family="monospace" font-weight="bold" font-size="14" text-anchor="middle">FPGA</text>
+        <rect x="50" y="215" width="180" height="20" rx="2" fill="#eab308"/>
+        <rect x="270" y="70" width="65" height="40" rx="4" fill="#1e293b"/>
+        <rect x="270" y="125" width="65" height="40" rx="4" fill="#1e293b"/>
+      
+  <text x="20" y="280" fill="#94a3b8" font-family="system-ui, -apple-system, sans-serif" font-size="12">Xilinx VCU128 FPGA Evaluation Board</text>
+</svg>

@@ -121,7 +121,9 @@ export function createApp() {
     setHeaders(res, filePath) {
       if (filePath.endsWith('.html')) {
         res.setHeader('Cache-Control', 'no-cache');
-      } else if (filePath.match(/\.(js|css|svg|png|ico|woff2)$/)) {
+      } else if (filePath.includes('img') || filePath.match(/\.(webp|png|jpg|jpeg|svg)$/)) {
+        res.setHeader('Cache-Control', 'public, max-age=2592000, immutable');
+      } else if (filePath.match(/\.(js|css|ico|woff2)$/)) {
         res.setHeader('Cache-Control', IS_PRODUCTION ? 'public, max-age=86400' : 'no-cache');
       }
     },

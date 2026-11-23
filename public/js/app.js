@@ -149,6 +149,21 @@ function buildItemCard(result) {
   card.className = 'item-card';
   card.setAttribute('aria-label', item.name);
 
+  // Equipment photo thumbnail
+  const img = document.createElement('img');
+  img.src = item.image?.src || `/img/equipment/${item.id}.svg`;
+  img.alt = item.image?.alt || `${item.name} representative illustration`;
+  img.className = 'eq-img-card';
+  img.width = 360;
+  img.height = 140;
+  img.loading = 'lazy';
+  img.decoding = 'async';
+  img.addEventListener('error', () => {
+    img.src = '/img/placeholder.svg';
+    img.alt = 'Equipment photo not available';
+  });
+  card.appendChild(img);
+
   const header = document.createElement('div');
   header.className = 'item-card-header';
 
@@ -307,6 +322,50 @@ function renderItemDetail(el, item, bundle) {
   header.appendChild(bookBtn);
   el.appendChild(header);
 
+  // Metadata bar
+  const metaBar = document.createElement('div');
+  metaBar.className = 'item-meta-bar';
+  const idSpan = document.createElement('span');
+  idSpan.textContent = `ID: ${item.id} • Lab: ${item.lab.replace(/_/g, ' ')} • Loc: ${item.location}`;
+  const copyBtn = document.createElement('button');
+  copyBtn.type = 'button';
+  copyBtn.className = 'btn btn-secondary btn-sm';
+  copyBtn.textContent = '🔗 Copy Link';
+  copyBtn.addEventListener('click', () => {
+    navigator.clipboard?.writeText(`${window.location.origin}/#/${item.id}`).then(() => {
+      copyBtn.textContent = '✓ Copied!';
+      setTimeout(() => { copyBtn.textContent = '🔗 Copy Link'; }, 2000);
+    }).catch(() => {});
+  });
+  metaBar.appendChild(idSpan);
+  metaBar.appendChild(copyBtn);
+  el.appendChild(metaBar);
+
+  // Representative illustration figure with caption
+  const figure = document.createElement('figure');
+  figure.className = 'eq-figure';
+  const detailImg = document.createElement('img');
+  detailImg.src = item.image?.src || `/img/equipment/${item.id}.svg`;
+  detailImg.alt = item.image?.alt || `${item.name} representation`;
+  detailImg.className = 'eq-img-large';
+  detailImg.width = 600;
+  detailImg.height = 280;
+  detailImg.loading = 'eager';
+  detailImg.decoding = 'sync';
+  detailImg.addEventListener('error', () => {
+    detailImg.src = '/img/placeholder.svg';
+    detailImg.alt = 'Equipment photo not available';
+  });
+  figure.appendChild(detailImg);
+
+  const figcaption = document.createElement('figcaption');
+  figcaption.className = 'eq-figcaption';
+  const creditSpan = document.createElement('span');
+  creditSpan.textContent = `${item.image?.credit || 'Representative illustration'} • ${item.image?.licence || 'CC0'}`;
+  figcaption.appendChild(creditSpan);
+  figure.appendChild(figcaption);
+  el.appendChild(figure);
+
   // Description
   addSection(el, 'Description', item.description);
 
@@ -404,6 +463,20 @@ function renderItemDetail(el, item, bundle) {
     for (const b of bundle) {
       const row = document.createElement('div');
       row.className = 'bundle-item';
+
+      const bImg = document.createElement('img');
+      bImg.src = b.item.image?.src || `/img/equipment/${b.item.id}.svg`;
+      bImg.alt = b.item.image?.alt || `${b.item.name} thumbnail`;
+      bImg.className = 'eq-img-thumb';
+      bImg.width = 56;
+      bImg.height = 42;
+      bImg.loading = 'lazy';
+      bImg.addEventListener('error', () => {
+        bImg.src = '/img/placeholder.svg';
+        bImg.alt = 'Equipment photo not available';
+      });
+      row.appendChild(bImg);
+
       const nameSpan = document.createElement('span');
       nameSpan.textContent = b.item.name;
       const infoSpan = document.createElement('span');
@@ -1188,6 +1261,26 @@ async function init() {
   ['item-modal','booking-modal','project-modal','demo-modal','viewer-modal'].forEach(id => {
     const m = document.getElementById(id);
     if (m) { trapFocus(m); }
+  });
+
+  // Hero action buttons
+  document.getElementById('btn-hero-explore')?.addEventListener('click', (e) => {
+    e.preventDefault();
+    const searchInput = document.getElementById('search-input');
+    searchInput?.focus();
+    searchInput?.scrollIntoView({ behavior: 'smooth' });
+  });
+
+  document.getElementById('btn-hero-demo')?.addEventListener('click', async () => {
+    try {
+      const res = await api('/api/scheduler/demo', {
+        method: 'POST',
+        body: JSON.stringify({ itemId: 'jetson-orin-agx' }),
+      });
+      showConflictResult(res);
+    } catch (err) {
+      showError(err.message);
+    }
   });
 
   // Initial render

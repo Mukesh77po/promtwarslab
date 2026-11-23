@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="300" viewBox="0 0 400 300" role="img" aria-label="Keysight DSOX1204G Digital Oscilloscope illustration">
+  <defs>
+    <linearGradient id="bg-osc-keysight-dsox1204g" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f172a"/>
+      <stop offset="100%" stop-color="#1e293b"/>
+    </linearGradient>
+  </defs>
+  <rect width="400" height="300" rx="12" fill="url(#bg-osc-keysight-dsox1204g)"/>
+  
+        <rect x="50" y="50" width="300" height="190" rx="10" fill="#1e293b" stroke="#38bdf8" stroke-width="2"/>
+        <rect x="70" y="70" width="180" height="130" rx="6" fill="#0f172a" stroke="#0284c7" stroke-width="1.5"/>
+        <path d="M75 135 H245" stroke="#334155" stroke-dasharray="4,4"/>
+        <path d="M160 75 V195" stroke="#334155" stroke-dasharray="4,4"/>
+        <path d="M75 135 Q95 70, 115 135 T155 135 T195 135 T235 135" fill="none" stroke="#22c55e" stroke-width="2.5"/>
+        <circle cx="280" cy="90" r="14" fill="#334155" stroke="#94a3b8" stroke-width="2"/>
+        <circle cx="280" cy="135" r="14" fill="#334155" stroke="#94a3b8" stroke-width="2"/>
+        <circle cx="280" cy="180" r="14" fill="#334155" stroke="#94a3b8" stroke-width="2"/>
+        <rect x="310" y="80" width="22" height="110" rx="4" fill="#0f172a"/>
+        <circle cx="321" cy="95" r="5" fill="#38bdf8"/>
+        <circle cx="321" cy="115" r="5" fill="#eab308"/>
+        <circle cx="321" cy="135" r="5" fill="#ec4899"/>
+        <circle cx="321" cy="155" r="5" fill="#10b981"/>
+      
+  <text x="20" y="280" fill="#94a3b8" font-family="system-ui, -apple-system, sans-serif" font-size="12">Keysight DSOX1204G Digital Oscilloscope</text>
+</svg>

@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="300" viewBox="0 0 400 300" role="img" aria-label="Shapeoko 5 Pro CNC Router illustration">
+  <defs>
+    <linearGradient id="bg-cnc-router-shapoko" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f172a"/>
+      <stop offset="100%" stop-color="#1e293b"/>
+    </linearGradient>
+  </defs>
+  <rect width="400" height="300" rx="12" fill="url(#bg-cnc-router-shapoko)"/>
+  
+        <rect x="60" y="50" width="280" height="200" rx="10" fill="#1e293b" stroke="#64748b" stroke-width="2"/>
+        <rect x="80" y="70" width="240" height="140" fill="#0f172a" stroke="#475569" stroke-width="1.5"/>
+        <path d="M120 70 V210 M160 70 V210 M200 70 V210 M240 70 V210 M280 70 V210" stroke="#334155" stroke-width="1"/>
+        <rect x="175" y="90" width="50" height="70" rx="4" fill="#475569" stroke="#94a3b8" stroke-width="1.5"/>
+        <line x1="200" y1="160" x2="200" y2="185" stroke="#facc15" stroke-width="4"/>
+      
+  <text x="20" y="280" fill="#94a3b8" font-family="system-ui, -apple-system, sans-serif" font-size="12">Shapeoko 5 Pro CNC Router</text>
+</svg>

@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="300" viewBox="0 0 400 300" role="img" aria-label="Elegoo Saturn 3 Ultra Resin 3D Printer illustration">
+  <defs>
+    <linearGradient id="bg-printer-resin-elegoo" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f172a"/>
+      <stop offset="100%" stop-color="#1e293b"/>
+    </linearGradient>
+  </defs>
+  <rect width="400" height="300" rx="12" fill="url(#bg-printer-resin-elegoo)"/>
+  
+        <rect x="80" y="45" width="240" height="210" rx="10" fill="#1e293b" stroke="#f97316" stroke-width="2"/>
+        <rect x="100" y="65" width="20" height="160" rx="3" fill="#475569"/>
+        <rect x="280" y="65" width="20" height="160" rx="3" fill="#475569"/>
+        <path d="M100 110 H300" stroke="#fb923c" stroke-width="4"/>
+        <rect x="180" y="98" width="40" height="30" rx="4" fill="#ea580c"/>
+        <path d="M200 128 L195 140 H205 Z" fill="#fdba74"/>
+        <rect x="120" y="185" width="160" height="15" rx="3" fill="#334155" stroke="#94a3b8" stroke-width="1"/>
+        <path d="M185 185 L200 155 L215 185 Z" fill="#f97316" opacity="0.6"/>
+      
+  <text x="20" y="280" fill="#94a3b8" font-family="system-ui, -apple-system, sans-serif" font-size="12">Elegoo Saturn 3 Ultra Resin 3D Printer</text>
+</svg>

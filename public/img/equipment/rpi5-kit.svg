@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="300" viewBox="0 0 400 300" role="img" aria-label="Raspberry Pi 5 Prototyping Kit illustration">
+  <defs>
+    <linearGradient id="bg-rpi5-kit" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f172a"/>
+      <stop offset="100%" stop-color="#1e293b"/>
+    </linearGradient>
+  </defs>
+  <rect width="400" height="300" rx="12" fill="url(#bg-rpi5-kit)"/>
+  
+        <rect x="60" y="55" width="280" height="185" rx="10" fill="#064e3b" stroke="#10b981" stroke-width="2"/>
+        <rect x="130" y="95" width="100" height="100" rx="6" fill="#0f172a" stroke="#34d399" stroke-width="2"/>
+        <rect x="150" y="115" width="60" height="60" rx="4" fill="#1e293b"/>
+        <text x="180" y="150" fill="#34d399" font-family="sans-serif" font-weight="bold" font-size="13" text-anchor="middle">SOC</text>
+        <rect x="80" y="65" width="50" height="24" rx="3" fill="#64748b"/>
+        <rect x="70" y="195" width="30" height="25" rx="3" fill="#cbd5e1"/>
+        <rect x="250" y="70" width="75" height="16" rx="2" fill="#0f172a"/>
+        <rect x="250" y="90" width="75" height="16" rx="2" fill="#0f172a"/>
+        <circle cx="75" cy="70" r="4" fill="#facc15"/>
+        <circle cx="325" cy="70" r="4" fill="#facc15"/>
+        <circle cx="75" cy="225" r="4" fill="#facc15"/>
+        <circle cx="325" cy="225" r="4" fill="#facc15"/>
+      
+  <text x="20" y="280" fill="#94a3b8" font-family="system-ui, -apple-system, sans-serif" font-size="12">Raspberry Pi 5 Prototyping Kit</text>
+</svg>

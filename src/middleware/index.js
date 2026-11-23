@@ -120,5 +120,6 @@ export function errorHandler(err, req, res, _next) {
     }));
   }
   if (res.headersSent) { return; }
-  res.status(status).json({ error: status < 500 ? err.message : 'Internal server error' });
+  const message = err.publicMessage || (status < 500 ? err.message : 'Internal server error');
+  res.status(status).json({ error: message });
 }

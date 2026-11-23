@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="300" viewBox="0 0 400 300" role="img" aria-label="RTX 4090 GPU Workstation illustration">
+  <defs>
+    <linearGradient id="bg-gpu-ws-rtx4090" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f172a"/>
+      <stop offset="100%" stop-color="#1e293b"/>
+    </linearGradient>
+  </defs>
+  <rect width="400" height="300" rx="12" fill="url(#bg-gpu-ws-rtx4090)"/>
+  
+        <rect x="120" y="40" width="160" height="220" rx="12" fill="#0f172a" stroke="#a855f7" stroke-width="2.5"/>
+        <rect x="135" y="55" width="130" height="50" rx="4" fill="#1e1b4b"/>
+        <circle cx="165" cy="80" r="18" fill="none" stroke="#c084fc" stroke-width="3"/>
+        <circle cx="200" cy="80" r="18" fill="none" stroke="#c084fc" stroke-width="3"/>
+        <circle cx="235" cy="80" r="18" fill="none" stroke="#c084fc" stroke-width="3"/>
+        <rect x="135" y="115" width="130" height="85" rx="6" fill="#1e293b" stroke="#7e22ce" stroke-width="1.5"/>
+        <path d="M145 155 H255" stroke="#ec4899" stroke-width="3"/>
+        <text x="200" y="145" fill="#c084fc" font-family="sans-serif" font-weight="bold" font-size="12" text-anchor="middle">GPU ACCELERATED</text>
+        <circle cx="200" cy="225" r="8" fill="#a855f7"/>
+      
+  <text x="20" y="280" fill="#94a3b8" font-family="system-ui, -apple-system, sans-serif" font-size="12">RTX 4090 GPU Workstation</text>
+</svg>

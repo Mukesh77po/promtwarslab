@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="300" viewBox="0 0 400 300" role="img" aria-label="Keysight P9374A Vector Network Analyser illustration">
+  <defs>
+    <linearGradient id="bg-vna-keysight-p9374a" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f172a"/>
+      <stop offset="100%" stop-color="#1e293b"/>
+    </linearGradient>
+  </defs>
+  <rect width="400" height="300" rx="12" fill="url(#bg-vna-keysight-p9374a)"/>
+  
+        <rect x="40" y="45" width="320" height="200" rx="12" fill="#1e293b" stroke="#818cf8" stroke-width="2"/>
+        <rect x="65" y="65" width="200" height="145" rx="6" fill="#090d16" stroke="#4f46e5" stroke-width="1.5"/>
+        <path d="M75 190 L95 185 L115 180 L135 175 L150 90 L165 175 L190 182 L220 186 L255 188" fill="none" stroke="#f43f5e" stroke-width="2.5"/>
+        <path d="M75 190 L95 185 L115 180 L135 175 L150 90 L165 175 L190 182 L220 186 L255 188 L255 200 L75 200 Z" fill="#f43f5e" opacity="0.15"/>
+        <circle cx="295" cy="90" r="16" fill="#334155" stroke="#c7d2fe" stroke-width="2"/>
+        <circle cx="295" cy="140" r="12" fill="#1e1b4b" stroke="#6366f1" stroke-width="3"/>
+        <circle cx="295" cy="180" r="12" fill="#1e1b4b" stroke="#6366f1" stroke-width="3"/>
+        <text x="75" y="85" fill="#818cf8" font-family="monospace" font-size="11">5G mmWave RF</text>
+      
+  <text x="20" y="280" fill="#94a3b8" font-family="system-ui, -apple-system, sans-serif" font-size="12">Keysight P9374A Vector Network Analyser</text>
+</svg>

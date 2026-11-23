@@ -4,18 +4,36 @@
     "name": "Tektronix MSO64 Mixed Signal Oscilloscope",
     "department": "ECE",
     "lab": "RF_SIGNALS_LAB",
-    "location": {"building": "ECE Block", "floor": 2},
+    "location": {
+      "building": "ECE Block",
+      "floor": 2
+    },
     "category": "oscilloscope",
     "tier": 2,
-    "specTags": ["oscilloscope", "mixed-signal", "4GHz", "signal-analysis", "debugging", "ECE"],
+    "specTags": [
+      "oscilloscope",
+      "mixed-signal",
+      "4GHz",
+      "signal-analysis",
+      "debugging",
+      "ECE"
+    ],
     "description": "4 GHz bandwidth mixed signal oscilloscope for RF signal debugging, protocol decoding, and PCB bring-up. Ideal for SPI, I2C, UART debug and high-speed digital signal analysis.",
     "datasheetSummary": "4 analog channels, 6.25 GS/s sample rate, 12.5M record length, spectrum view, digital channels for logic analysis, USB/LAN connectivity.",
-    "softwareInstalled": ["TekScope", "OpenChoice"],
+    "softwareInstalled": [
+      "TekScope",
+      "OpenChoice"
+    ],
     "status": "available",
     "requiresApproval": false,
     "riskLevel": "low",
-    "prerequisiteModules": ["EC101"],
-    "compatibleWith": ["probe-set-tek", "func-gen-keysight"],
+    "prerequisiteModules": [
+      "EC101"
+    ],
+    "compatibleWith": [
+      "probe-set-tek",
+      "func-gen-keysight"
+    ],
     "equivalentGroup": "oscilloscope-bench",
     "usageSteps": [
       "Power on and wait for boot (30s)",
@@ -24,31 +42,76 @@
       "Press AUTOSET for auto-configuration",
       "Use spectrum view for FFT analysis"
     ],
-    "safetyNotes": ["Max input 300 Vrms – never exceed", "Probe ground clip must connect before signal probe", "Do not leave powered and unattended overnight"],
-    "model3d": {"kind": "oscilloscope", "parts": [
-      {"id": "screen", "label": "Display", "description": "15.6\" HD touch display showing waveforms"},
-      {"id": "knobs", "label": "Control Knobs", "description": "Timebase and amplitude control knobs"},
-      {"id": "probeports", "label": "Probe Ports", "description": "4 BNC probe input ports CH1-CH4"},
-      {"id": "power", "label": "Power Button", "description": "Front-panel power button with LED indicator"}
-    ]}
+    "safetyNotes": [
+      "Max input 300 Vrms – never exceed",
+      "Probe ground clip must connect before signal probe",
+      "Do not leave powered and unattended overnight"
+    ],
+    "model3d": {
+      "kind": "oscilloscope",
+      "parts": [
+        {
+          "id": "screen",
+          "label": "Display",
+          "description": "15.6\" HD touch display showing waveforms"
+        },
+        {
+          "id": "knobs",
+          "label": "Control Knobs",
+          "description": "Timebase and amplitude control knobs"
+        },
+        {
+          "id": "probeports",
+          "label": "Probe Ports",
+          "description": "4 BNC probe input ports CH1-CH4"
+        },
+        {
+          "id": "power",
+          "label": "Power Button",
+          "description": "Front-panel power button with LED indicator"
+        }
+      ]
+    },
+    "image": {
+      "src": "/img/equipment/osc-tek-mso64.svg",
+      "alt": "Representative schematic illustration of Tektronix MSO64 Mixed Signal Oscilloscope",
+      "credit": "Illustration generated for LabLink",
+      "licence": "CC0",
+      "sourceUrl": null
+    }
   },
   {
     "id": "osc-keysight-dsox1204g",
     "name": "Keysight DSOX1204G Digital Oscilloscope",
     "department": "ECE",
     "lab": "RF_SIGNALS_LAB",
-    "location": {"building": "ECE Block", "floor": 2},
+    "location": {
+      "building": "ECE Block",
+      "floor": 2
+    },
     "category": "oscilloscope",
     "tier": 1,
-    "specTags": ["oscilloscope", "digital", "200MHz", "signal-analysis", "beginner-friendly", "ECE"],
+    "specTags": [
+      "oscilloscope",
+      "digital",
+      "200MHz",
+      "signal-analysis",
+      "beginner-friendly",
+      "ECE"
+    ],
     "description": "200 MHz 4-channel oscilloscope for circuit debugging, signal analysis, and PCB testing. Beginner-friendly for lab practicals and project signal verification.",
     "datasheetSummary": "4 channels, 200MHz bandwidth, 2 GS/s, built-in waveform generator, 6-in-1 instrument.",
-    "softwareInstalled": ["Keysight BenchVue"],
+    "softwareInstalled": [
+      "Keysight BenchVue"
+    ],
     "status": "available",
     "requiresApproval": false,
     "riskLevel": "low",
     "prerequisiteModules": [],
-    "compatibleWith": ["probe-set-tek", "func-gen-keysight"],
+    "compatibleWith": [
+      "probe-set-tek",
+      "func-gen-keysight"
+    ],
     "equivalentGroup": "oscilloscope-bench",
     "usageSteps": [
       "Power on with front panel button",
@@ -56,30 +119,75 @@
       "Press AUTO to auto-scale",
       "Adjust trigger level for stable display"
     ],
-    "safetyNotes": ["Input max 300 Vpeak", "Use correct probe ground connections"],
-    "model3d": {"kind": "oscilloscope", "parts": [
-      {"id": "screen", "label": "7\" Display", "description": "7-inch WVGA colour display"},
-      {"id": "probeports", "label": "Probe Ports", "description": "4 BNC analogue input ports"},
-      {"id": "wfmgen", "label": "Waveform Gen Output", "description": "Built-in waveform generator BNC output"}
-    ]}
+    "safetyNotes": [
+      "Input max 300 Vpeak",
+      "Use correct probe ground connections"
+    ],
+    "model3d": {
+      "kind": "oscilloscope",
+      "parts": [
+        {
+          "id": "screen",
+          "label": "7\" Display",
+          "description": "7-inch WVGA colour display"
+        },
+        {
+          "id": "probeports",
+          "label": "Probe Ports",
+          "description": "4 BNC analogue input ports"
+        },
+        {
+          "id": "wfmgen",
+          "label": "Waveform Gen Output",
+          "description": "Built-in waveform generator BNC output"
+        }
+      ]
+    },
+    "image": {
+      "src": "/img/equipment/osc-keysight-dsox1204g.svg",
+      "alt": "Representative schematic illustration of Keysight DSOX1204G Digital Oscilloscope",
+      "credit": "Illustration generated for LabLink",
+      "licence": "CC0",
+      "sourceUrl": null
+    }
   },
   {
     "id": "vna-keysight-p9374a",
     "name": "Keysight P9374A Vector Network Analyser",
     "department": "ECE",
     "lab": "RF_SIGNALS_LAB",
-    "location": {"building": "ECE Block", "floor": 2},
+    "location": {
+      "building": "ECE Block",
+      "floor": 2
+    },
     "category": "vna",
     "tier": 3,
-    "specTags": ["VNA", "vector-network-analyser", "mmWave", "5G", "antenna", "RF", "S-parameters", "signal-analysis"],
+    "specTags": [
+      "VNA",
+      "vector-network-analyser",
+      "mmWave",
+      "5G",
+      "antenna",
+      "RF",
+      "S-parameters",
+      "signal-analysis"
+    ],
     "description": "2-port VNA covering 300 kHz to 20 GHz for antenna characterisation, mmWave 5G filter design, S-parameter measurement, and RF/microwave PCB testing. Essential for 5G sub-6GHz and mmWave antenna measurement.",
     "datasheetSummary": "2-port, 300kHz-20GHz, 100dB dynamic range, USB-controlled, compact USB VNA form factor.",
-    "softwareInstalled": ["Keysight PathWave VNA", "MATLAB RF Toolbox"],
+    "softwareInstalled": [
+      "Keysight PathWave VNA",
+      "MATLAB RF Toolbox"
+    ],
     "status": "available",
     "requiresApproval": true,
     "riskLevel": "medium",
-    "prerequisiteModules": ["EC201", "EC302"],
-    "compatibleWith": ["spectrum-analyser-rohde"],
+    "prerequisiteModules": [
+      "EC201",
+      "EC302"
+    ],
+    "compatibleWith": [
+      "spectrum-analyser-rohde"
+    ],
     "equivalentGroup": "rf-measurement",
     "usageSteps": [
       "Full 2-port SOLT calibration before measurement",
@@ -88,30 +196,73 @@
       "Select S11/S21/S22 parameters as required",
       "Save calibration state before DUT change"
     ],
-    "safetyNotes": ["ESD precautions mandatory – wear wrist strap", "Max input power +27 dBm – never exceed", "RF cables must be rated for frequency range"],
-    "model3d": {"kind": "generic", "parts": [
-      {"id": "ports", "label": "RF Ports", "description": "2 precision SMA RF port connectors"},
-      {"id": "usb", "label": "USB Interface", "description": "USB-C connection to controlling PC"},
-      {"id": "ref", "label": "Ref Port", "description": "10 MHz reference in/out for synchronisation"}
-    ]}
+    "safetyNotes": [
+      "ESD precautions mandatory – wear wrist strap",
+      "Max input power +27 dBm – never exceed",
+      "RF cables must be rated for frequency range"
+    ],
+    "model3d": {
+      "kind": "generic",
+      "parts": [
+        {
+          "id": "ports",
+          "label": "RF Ports",
+          "description": "2 precision SMA RF port connectors"
+        },
+        {
+          "id": "usb",
+          "label": "USB Interface",
+          "description": "USB-C connection to controlling PC"
+        },
+        {
+          "id": "ref",
+          "label": "Ref Port",
+          "description": "10 MHz reference in/out for synchronisation"
+        }
+      ]
+    },
+    "image": {
+      "src": "/img/equipment/vna-keysight-p9374a.svg",
+      "alt": "Representative schematic illustration of Keysight P9374A Vector Network Analyser",
+      "credit": "Illustration generated for LabLink",
+      "licence": "CC0",
+      "sourceUrl": null
+    }
   },
   {
     "id": "spectrum-rohde-fpc1500",
     "name": "Rohde & Schwarz FPC1500 Spectrum Analyser",
     "department": "ECE",
     "lab": "RF_SIGNALS_LAB",
-    "location": {"building": "ECE Block", "floor": 2},
+    "location": {
+      "building": "ECE Block",
+      "floor": 2
+    },
     "category": "spectrum-analyser",
     "tier": 2,
-    "specTags": ["spectrum-analyser", "RF", "mmWave", "5G", "antenna", "signal-analysis", "frequency-domain"],
+    "specTags": [
+      "spectrum-analyser",
+      "RF",
+      "mmWave",
+      "5G",
+      "antenna",
+      "signal-analysis",
+      "frequency-domain"
+    ],
     "description": "Spectrum analyser from 5 kHz to 3 GHz with built-in tracking generator for characterising 5G sub-6GHz signals, mmWave interference, antenna radiation pattern, and filter response. Perfect for antenna testing and 5G NR signal analysis.",
     "datasheetSummary": "5 kHz – 3 GHz, -150 dBm noise floor, tracking generator, AM/FM demodulation, USB/LAN.",
-    "softwareInstalled": ["R&S InstrumentView"],
+    "softwareInstalled": [
+      "R&S InstrumentView"
+    ],
     "status": "in_use",
     "requiresApproval": false,
     "riskLevel": "medium",
-    "prerequisiteModules": ["EC201"],
-    "compatibleWith": ["vna-keysight-p9374a"],
+    "prerequisiteModules": [
+      "EC201"
+    ],
+    "compatibleWith": [
+      "vna-keysight-p9374a"
+    ],
     "equivalentGroup": "rf-measurement",
     "usageSteps": [
       "Power on and allow 5-min warm-up",
@@ -120,30 +271,84 @@
       "Use marker for peak identification",
       "Export data via USB or LAN"
     ],
-    "safetyNotes": ["Input max +30 dBm", "ESD protection required", "Do not exceed input rating with external amplifiers"],
-    "model3d": {"kind": "generic", "parts": [
-      {"id": "rfin", "label": "RF Input", "description": "N-type RF input connector"},
-      {"id": "trackout", "label": "Tracking Gen Output", "description": "Tracking generator output port"},
-      {"id": "display", "label": "Display", "description": "10.1\" capacitive touch display"}
-    ]}
+    "safetyNotes": [
+      "Input max +30 dBm",
+      "ESD protection required",
+      "Do not exceed input rating with external amplifiers"
+    ],
+    "model3d": {
+      "kind": "generic",
+      "parts": [
+        {
+          "id": "rfin",
+          "label": "RF Input",
+          "description": "N-type RF input connector"
+        },
+        {
+          "id": "trackout",
+          "label": "Tracking Gen Output",
+          "description": "Tracking generator output port"
+        },
+        {
+          "id": "display",
+          "label": "Display",
+          "description": "10.1\" capacitive touch display"
+        }
+      ]
+    },
+    "image": {
+      "src": "/img/equipment/spectrum-rohde-fpc1500.svg",
+      "alt": "Representative schematic illustration of Rohde & Schwarz FPC1500 Spectrum Analyser",
+      "credit": "Illustration generated for LabLink",
+      "licence": "CC0",
+      "sourceUrl": null
+    }
   },
   {
     "id": "jetson-orin-agx",
     "name": "NVIDIA Jetson AGX Orin Developer Kit",
     "department": "CSE",
     "lab": "AI_ROBOTICS_LAB",
-    "location": {"building": "CS Block", "floor": 1},
+    "location": {
+      "building": "CS Block",
+      "floor": 1
+    },
     "category": "dev-board",
     "tier": 3,
-    "specTags": ["edge-AI", "computer-vision", "inference", "CUDA", "Jetson", "deep-learning", "robotics", "object-detection", "SLAM"],
+    "specTags": [
+      "edge-AI",
+      "computer-vision",
+      "inference",
+      "CUDA",
+      "Jetson",
+      "deep-learning",
+      "robotics",
+      "object-detection",
+      "SLAM"
+    ],
     "description": "High-performance edge AI platform with 275 TOPS for real-time computer vision, deep learning inference, SLAM, and robotics workloads. Run YOLOv8, OpenCV, TensorRT models at the edge. Ideal for autonomous systems, object detection, and embedded AI projects.",
     "datasheetSummary": "12-core ARM Cortex-A78AE CPU, 2048-core Ampere GPU, 275 TOPS, 64 GB LPDDR5, 32 GB eMMC, PCIe, USB 3.2.",
-    "softwareInstalled": ["JetPack 6", "CUDA 12", "cuDNN", "TensorRT", "OpenCV", "ROS2", "PyTorch"],
+    "softwareInstalled": [
+      "JetPack 6",
+      "CUDA 12",
+      "cuDNN",
+      "TensorRT",
+      "OpenCV",
+      "ROS2",
+      "PyTorch"
+    ],
     "status": "available",
     "requiresApproval": true,
     "riskLevel": "medium",
-    "prerequisiteModules": ["CS301", "CS401"],
-    "compatibleWith": ["camera-realsense-d435", "lidar-ouster-os1", "psu-bench-30v"],
+    "prerequisiteModules": [
+      "CS301",
+      "CS401"
+    ],
+    "compatibleWith": [
+      "camera-realsense-d435",
+      "lidar-ouster-os1",
+      "psu-bench-30v"
+    ],
     "equivalentGroup": null,
     "usageSteps": [
       "Boot from eMMC (default) or NVMe SSD",
@@ -152,31 +357,78 @@
       "Run inference: python infer.py --model yolov8n",
       "Monitor GPU: tegrastats"
     ],
-    "safetyNotes": ["Do not cover ventilation – heat output is significant", "Use provided 65W adapter only", "Save work before power cuts – no UPS"],
-    "model3d": {"kind": "dev_board", "parts": [
-      {"id": "board", "label": "Main Board", "description": "AGX Orin SoM with 275 TOPS AI accelerator"},
-      {"id": "pcie", "label": "PCIe Slot", "description": "PCIe x16 slot for NVMe or expansion cards"},
-      {"id": "usb", "label": "USB Ports", "description": "USB 3.2 Gen 2 ports for peripherals"},
-      {"id": "cam", "label": "Camera Connectors", "description": "MIPI CSI-2 camera connectors"}
-    ]}
+    "safetyNotes": [
+      "Do not cover ventilation – heat output is significant",
+      "Use provided 65W adapter only",
+      "Save work before power cuts – no UPS"
+    ],
+    "model3d": {
+      "kind": "dev_board",
+      "parts": [
+        {
+          "id": "board",
+          "label": "Main Board",
+          "description": "AGX Orin SoM with 275 TOPS AI accelerator"
+        },
+        {
+          "id": "pcie",
+          "label": "PCIe Slot",
+          "description": "PCIe x16 slot for NVMe or expansion cards"
+        },
+        {
+          "id": "usb",
+          "label": "USB Ports",
+          "description": "USB 3.2 Gen 2 ports for peripherals"
+        },
+        {
+          "id": "cam",
+          "label": "Camera Connectors",
+          "description": "MIPI CSI-2 camera connectors"
+        }
+      ]
+    },
+    "image": {
+      "src": "/img/equipment/jetson-orin-agx.svg",
+      "alt": "Representative schematic illustration of NVIDIA Jetson AGX Orin Developer Kit",
+      "credit": "Illustration generated for LabLink",
+      "licence": "CC0",
+      "sourceUrl": null
+    }
   },
   {
     "id": "camera-realsense-d435",
     "name": "Intel RealSense D435 Depth Camera",
     "department": "CSE",
     "lab": "AI_ROBOTICS_LAB",
-    "location": {"building": "CS Block", "floor": 1},
+    "location": {
+      "building": "CS Block",
+      "floor": 1
+    },
     "category": "sensor",
     "tier": 1,
-    "specTags": ["depth-camera", "RGBD", "computer-vision", "SLAM", "point-cloud", "3D-sensing", "ROS"],
+    "specTags": [
+      "depth-camera",
+      "RGBD",
+      "computer-vision",
+      "SLAM",
+      "point-cloud",
+      "3D-sensing",
+      "ROS"
+    ],
     "description": "Stereo depth camera for computer vision, 3D reconstruction, SLAM, and point-cloud processing. Compatible with ROS2 and OpenCV. Use with Jetson for edge inference and robotics navigation.",
     "datasheetSummary": "1280x720 depth, 848x480 RGB, 90fps, USB-C, range 0.1m-10m, ROS2 driver included.",
-    "softwareInstalled": ["librealsense2", "ROS2 realsense driver"],
+    "softwareInstalled": [
+      "librealsense2",
+      "ROS2 realsense driver"
+    ],
     "status": "available",
     "requiresApproval": false,
     "riskLevel": "low",
     "prerequisiteModules": [],
-    "compatibleWith": ["jetson-orin-agx", "lidar-ouster-os1"],
+    "compatibleWith": [
+      "jetson-orin-agx",
+      "lidar-ouster-os1"
+    ],
     "equivalentGroup": null,
     "usageSteps": [
       "Connect via USB-C to host",
@@ -184,30 +436,74 @@
       "Launch: ros2 launch realsense2_camera rs_launch.py",
       "View pointcloud in RViz2"
     ],
-    "safetyNotes": ["IR emitter – do not look directly into the IR projector", "Handle lens with care"],
-    "model3d": {"kind": "generic", "parts": [
-      {"id": "lens", "label": "Stereo Lenses", "description": "Global shutter stereo depth cameras"},
-      {"id": "rgb", "label": "RGB Camera", "description": "1080p colour camera"},
-      {"id": "ir", "label": "IR Projector", "description": "Active IR depth projector (Class 1 laser)"}
-    ]}
+    "safetyNotes": [
+      "IR emitter – do not look directly into the IR projector",
+      "Handle lens with care"
+    ],
+    "model3d": {
+      "kind": "generic",
+      "parts": [
+        {
+          "id": "lens",
+          "label": "Stereo Lenses",
+          "description": "Global shutter stereo depth cameras"
+        },
+        {
+          "id": "rgb",
+          "label": "RGB Camera",
+          "description": "1080p colour camera"
+        },
+        {
+          "id": "ir",
+          "label": "IR Projector",
+          "description": "Active IR depth projector (Class 1 laser)"
+        }
+      ]
+    },
+    "image": {
+      "src": "/img/equipment/camera-realsense-d435.svg",
+      "alt": "Representative schematic illustration of Intel RealSense D435 Depth Camera",
+      "credit": "Illustration generated for LabLink",
+      "licence": "CC0",
+      "sourceUrl": null
+    }
   },
   {
     "id": "lidar-ouster-os1",
     "name": "Ouster OS1-32 LiDAR",
     "department": "Robotics",
     "lab": "ROBOTICS_LAB",
-    "location": {"building": "Robotics Block", "floor": 1},
+    "location": {
+      "building": "Robotics Block",
+      "floor": 1
+    },
     "category": "sensor",
     "tier": 3,
-    "specTags": ["LiDAR", "point-cloud", "SLAM", "autonomous", "3D-mapping", "robotics", "outdoor"],
+    "specTags": [
+      "LiDAR",
+      "point-cloud",
+      "SLAM",
+      "autonomous",
+      "3D-mapping",
+      "robotics",
+      "outdoor"
+    ],
     "description": "32-channel LiDAR for 3D mapping, SLAM, autonomous navigation, and outdoor robotics. 360° field of view, 200m range. Used for autonomous vehicle research and mobile robot navigation.",
     "datasheetSummary": "32 channels, 200m range, 360° FoV, 20 Hz, Ethernet/UDP, ROS2 driver, IP77 rated.",
-    "softwareInstalled": ["ouster-sdk", "ROS2 Ouster driver"],
+    "softwareInstalled": [
+      "ouster-sdk",
+      "ROS2 Ouster driver"
+    ],
     "status": "available",
     "requiresApproval": true,
     "riskLevel": "medium",
-    "prerequisiteModules": ["RB201"],
-    "compatibleWith": ["jetson-orin-agx", "camera-realsense-d435"],
+    "prerequisiteModules": [
+      "RB201"
+    ],
+    "compatibleWith": [
+      "jetson-orin-agx",
+      "camera-realsense-d435"
+    ],
     "equivalentGroup": null,
     "usageSteps": [
       "Connect via Ethernet, set static IP 192.168.1.1",
@@ -215,29 +511,65 @@
       "Visualise in RViz2 with PointCloud2 topic",
       "Use slam_toolbox for 3D mapping"
     ],
-    "safetyNotes": ["Class 1 eye-safe laser – normal precautions", "Outdoor use: check for moisture ingress", "Rotation: keep fingers clear during spin-up"],
-    "model3d": {"kind": "generic", "parts": [
-      {"id": "spindle", "label": "Rotating Head", "description": "360° rotating LiDAR head with 32 laser channels"},
-      {"id": "base", "label": "Mount Base", "description": "Mounting base with Ethernet and power connectors"}
-    ]}
+    "safetyNotes": [
+      "Class 1 eye-safe laser – normal precautions",
+      "Outdoor use: check for moisture ingress",
+      "Rotation: keep fingers clear during spin-up"
+    ],
+    "model3d": {
+      "kind": "generic",
+      "parts": [
+        {
+          "id": "spindle",
+          "label": "Rotating Head",
+          "description": "360° rotating LiDAR head with 32 laser channels"
+        },
+        {
+          "id": "base",
+          "label": "Mount Base",
+          "description": "Mounting base with Ethernet and power connectors"
+        }
+      ]
+    },
+    "image": {
+      "src": "/img/equipment/lidar-ouster-os1.svg",
+      "alt": "Representative schematic illustration of Ouster OS1-32 LiDAR",
+      "credit": "Illustration generated for LabLink",
+      "licence": "CC0",
+      "sourceUrl": null
+    }
   },
   {
     "id": "psu-bench-30v",
     "name": "Rigol DP832 Bench Power Supply",
     "department": "ECE",
     "lab": "ELECTRONICS_LAB",
-    "location": {"building": "ECE Block", "floor": 1},
+    "location": {
+      "building": "ECE Block",
+      "floor": 1
+    },
     "category": "power-supply",
     "tier": 1,
-    "specTags": ["power-supply", "bench", "prototyping", "PCB", "electronics"],
+    "specTags": [
+      "power-supply",
+      "bench",
+      "prototyping",
+      "PCB",
+      "electronics"
+    ],
     "description": "Triple-output bench power supply for PCB prototyping, circuit testing, and powering development boards. 30V/3A per channel, programmable via USB/LAN.",
     "datasheetSummary": "3 channels: 30V/3A, 30V/3A, 5V/3A. USB/LAN/GPIB control, OVP/OCP protection.",
-    "softwareInstalled": ["Ultra Sigma"],
+    "softwareInstalled": [
+      "Ultra Sigma"
+    ],
     "status": "available",
     "requiresApproval": false,
     "riskLevel": "low",
     "prerequisiteModules": [],
-    "compatibleWith": ["jetson-orin-agx", "fpga-xilinx-vcu128"],
+    "compatibleWith": [
+      "jetson-orin-agx",
+      "fpga-xilinx-vcu128"
+    ],
     "equivalentGroup": "bench-psu",
     "usageSteps": [
       "Set output voltage and current limit before enabling",
@@ -245,29 +577,77 @@
       "Use tracking mode for symmetric supplies (±V)",
       "Press Output Enable to activate"
     ],
-    "safetyNotes": ["Always set current limit before connecting DUT", "Check polarity before connection"],
-    "model3d": {"kind": "generic", "parts": [
-      {"id": "ch1", "label": "Channel 1", "description": "30V/3A output with binding posts"},
-      {"id": "ch2", "label": "Channel 2", "description": "30V/3A output with binding posts"},
-      {"id": "ch3", "label": "Channel 3", "description": "5V/3A fixed output"}
-    ]}
+    "safetyNotes": [
+      "Always set current limit before connecting DUT",
+      "Check polarity before connection"
+    ],
+    "model3d": {
+      "kind": "generic",
+      "parts": [
+        {
+          "id": "ch1",
+          "label": "Channel 1",
+          "description": "30V/3A output with binding posts"
+        },
+        {
+          "id": "ch2",
+          "label": "Channel 2",
+          "description": "30V/3A output with binding posts"
+        },
+        {
+          "id": "ch3",
+          "label": "Channel 3",
+          "description": "5V/3A fixed output"
+        }
+      ]
+    },
+    "image": {
+      "src": "/img/equipment/psu-bench-30v.svg",
+      "alt": "Representative schematic illustration of Rigol DP832 Bench Power Supply",
+      "credit": "Illustration generated for LabLink",
+      "licence": "CC0",
+      "sourceUrl": null
+    }
   },
   {
     "id": "gpu-ws-rtx4090",
     "name": "RTX 4090 GPU Workstation",
     "department": "CSE",
     "lab": "GPU_COMPUTE_LAB",
-    "location": {"building": "CS Block", "floor": 3},
+    "location": {
+      "building": "CS Block",
+      "floor": 3
+    },
     "category": "workstation",
     "tier": 3,
-    "specTags": ["GPU", "deep-learning", "training", "inference", "CUDA", "RTX4090", "LLM", "computer-vision", "AI"],
+    "specTags": [
+      "GPU",
+      "deep-learning",
+      "training",
+      "inference",
+      "CUDA",
+      "RTX4090",
+      "LLM",
+      "computer-vision",
+      "AI"
+    ],
     "description": "High-end GPU workstation for large model training, LLM fine-tuning, deep learning research, and high-throughput inference. Features NVIDIA RTX 4090 24 GB VRAM. Use for training transformers, fine-tuning LLMs, and GPU-accelerated simulations.",
     "datasheetSummary": "Intel Core i9-14900K, 128GB DDR5, RTX 4090 24GB GDDR6X, 2TB NVMe RAID, Ubuntu 22.04.",
-    "softwareInstalled": ["CUDA 12.4", "cuDNN 9", "PyTorch 2.3", "TensorFlow 2.16", "Jupyter Lab", "Docker", "Conda"],
+    "softwareInstalled": [
+      "CUDA 12.4",
+      "cuDNN 9",
+      "PyTorch 2.3",
+      "TensorFlow 2.16",
+      "Jupyter Lab",
+      "Docker",
+      "Conda"
+    ],
     "status": "available",
     "requiresApproval": true,
     "riskLevel": "low",
-    "prerequisiteModules": ["CS301"],
+    "prerequisiteModules": [
+      "CS301"
+    ],
     "compatibleWith": [],
     "equivalentGroup": "gpu-compute",
     "usageSteps": [
@@ -277,26 +657,74 @@
       "Submit long jobs via SLURM: sbatch job.sh",
       "Log out when done – do not idle"
     ],
-    "safetyNotes": ["Do not install system packages without technician approval", "Keep data in /home/$USER – /tmp is wiped on reboot", "Report any GPU errors immediately"],
-    "model3d": {"kind": "workstation", "parts": [
-      {"id": "gpu", "label": "RTX 4090", "description": "NVIDIA RTX 4090 24GB GPU – the main compute unit"},
-      {"id": "cpu", "label": "CPU", "description": "Intel Core i9-14900K 24-core processor"},
-      {"id": "ram", "label": "RAM", "description": "128 GB DDR5 ECC memory"},
-      {"id": "storage", "label": "Storage", "description": "2 TB NVMe SSD RAID array"}
-    ]}
+    "safetyNotes": [
+      "Do not install system packages without technician approval",
+      "Keep data in /home/$USER – /tmp is wiped on reboot",
+      "Report any GPU errors immediately"
+    ],
+    "model3d": {
+      "kind": "workstation",
+      "parts": [
+        {
+          "id": "gpu",
+          "label": "RTX 4090",
+          "description": "NVIDIA RTX 4090 24GB GPU – the main compute unit"
+        },
+        {
+          "id": "cpu",
+          "label": "CPU",
+          "description": "Intel Core i9-14900K 24-core processor"
+        },
+        {
+          "id": "ram",
+          "label": "RAM",
+          "description": "128 GB DDR5 ECC memory"
+        },
+        {
+          "id": "storage",
+          "label": "Storage",
+          "description": "2 TB NVMe SSD RAID array"
+        }
+      ]
+    },
+    "image": {
+      "src": "/img/equipment/gpu-ws-rtx4090.svg",
+      "alt": "Representative schematic illustration of RTX 4090 GPU Workstation",
+      "credit": "Illustration generated for LabLink",
+      "licence": "CC0",
+      "sourceUrl": null
+    }
   },
   {
     "id": "gpu-ws-rtx3060",
     "name": "RTX 3060 GPU Workstation",
     "department": "CSE",
     "lab": "GPU_COMPUTE_LAB",
-    "location": {"building": "CS Block", "floor": 3},
+    "location": {
+      "building": "CS Block",
+      "floor": 3
+    },
     "category": "workstation",
     "tier": 2,
-    "specTags": ["GPU", "deep-learning", "training", "inference", "CUDA", "RTX3060", "computer-vision", "AI"],
+    "specTags": [
+      "GPU",
+      "deep-learning",
+      "training",
+      "inference",
+      "CUDA",
+      "RTX3060",
+      "computer-vision",
+      "AI"
+    ],
     "description": "Mid-range GPU workstation for model training, computer vision projects, and deep learning experiments. NVIDIA RTX 3060 12 GB VRAM. Suitable for most coursework and research projects not requiring top-tier GPU memory.",
     "datasheetSummary": "AMD Ryzen 9 7900X, 64GB DDR5, RTX 3060 12GB, 1TB NVMe, Ubuntu 22.04.",
-    "softwareInstalled": ["CUDA 12.3", "PyTorch 2.2", "TensorFlow 2.15", "Jupyter Lab", "Conda"],
+    "softwareInstalled": [
+      "CUDA 12.3",
+      "PyTorch 2.2",
+      "TensorFlow 2.15",
+      "Jupyter Lab",
+      "Conda"
+    ],
     "status": "available",
     "requiresApproval": false,
     "riskLevel": "low",
@@ -309,30 +737,71 @@
       "Use conda for environment management",
       "Run training: python train.py"
     ],
-    "safetyNotes": ["Log out when job completes", "Do not leave idle Jupyter kernels running"],
-    "model3d": {"kind": "workstation", "parts": [
-      {"id": "gpu", "label": "RTX 3060", "description": "NVIDIA RTX 3060 12GB GPU"},
-      {"id": "cpu", "label": "CPU", "description": "AMD Ryzen 9 7900X 12-core"},
-      {"id": "ram", "label": "RAM", "description": "64 GB DDR5 memory"}
-    ]}
+    "safetyNotes": [
+      "Log out when job completes",
+      "Do not leave idle Jupyter kernels running"
+    ],
+    "model3d": {
+      "kind": "workstation",
+      "parts": [
+        {
+          "id": "gpu",
+          "label": "RTX 3060",
+          "description": "NVIDIA RTX 3060 12GB GPU"
+        },
+        {
+          "id": "cpu",
+          "label": "CPU",
+          "description": "AMD Ryzen 9 7900X 12-core"
+        },
+        {
+          "id": "ram",
+          "label": "RAM",
+          "description": "64 GB DDR5 memory"
+        }
+      ]
+    },
+    "image": {
+      "src": "/img/equipment/gpu-ws-rtx3060.svg",
+      "alt": "Representative schematic illustration of RTX 3060 GPU Workstation",
+      "credit": "Illustration generated for LabLink",
+      "licence": "CC0",
+      "sourceUrl": null
+    }
   },
   {
     "id": "printer-fdm-prusa",
     "name": "Prusa MK4 FDM 3D Printer",
     "department": "Mechanical",
     "lab": "FABRICATION_LAB",
-    "location": {"building": "Mech Block", "floor": 1},
+    "location": {
+      "building": "Mech Block",
+      "floor": 1
+    },
     "category": "3d-printer",
     "tier": 1,
-    "specTags": ["3D-printing", "FDM", "prototyping", "PLA", "PETG", "mechanical", "fabrication"],
+    "specTags": [
+      "3D-printing",
+      "FDM",
+      "prototyping",
+      "PLA",
+      "PETG",
+      "mechanical",
+      "fabrication"
+    ],
     "description": "FDM 3D printer for rapid prototyping mechanical parts, enclosures, and fixtures. Supports PLA, PETG, ASA, and flexible filaments. Ideal for robotics mounts, case designs, and iterative prototype testing.",
     "datasheetSummary": "250x210x220mm build volume, 0.05-0.35mm layer height, automatic bed levelling, PEI sheet, Ethernet.",
-    "softwareInstalled": ["PrusaSlicer", "OctoPrint"],
+    "softwareInstalled": [
+      "PrusaSlicer",
+      "OctoPrint"
+    ],
     "status": "available",
     "requiresApproval": false,
     "riskLevel": "low",
     "prerequisiteModules": [],
-    "compatibleWith": ["printer-resin-elegoo"],
+    "compatibleWith": [
+      "printer-resin-elegoo"
+    ],
     "equivalentGroup": "3d-printer",
     "usageSteps": [
       "Prepare .3mf file in PrusaSlicer with correct settings",
@@ -341,31 +810,78 @@
       "Collect print only after full bed cool-down",
       "Clean PEI sheet with IPA between prints"
     ],
-    "safetyNotes": ["Hot end reaches 280°C – do not touch", "Fumes: ensure ventilation or wear N95 for ABS", "Never leave print unsupervised for first 10 minutes"],
-    "model3d": {"kind": "3d_printer", "parts": [
-      {"id": "hotend", "label": "Hot End", "description": "0.4mm brass nozzle – reaches up to 300°C"},
-      {"id": "bed", "label": "Heated Bed", "description": "PEI-coated spring steel removable print sheet"},
-      {"id": "frame", "label": "Aluminium Frame", "description": "Rigid i3-style aluminium extrusion frame"},
-      {"id": "feeder", "label": "Extruder", "description": "Bondtech dual-drive extruder assembly"}
-    ]}
+    "safetyNotes": [
+      "Hot end reaches 280°C – do not touch",
+      "Fumes: ensure ventilation or wear N95 for ABS",
+      "Never leave print unsupervised for first 10 minutes"
+    ],
+    "model3d": {
+      "kind": "3d_printer",
+      "parts": [
+        {
+          "id": "hotend",
+          "label": "Hot End",
+          "description": "0.4mm brass nozzle – reaches up to 300°C"
+        },
+        {
+          "id": "bed",
+          "label": "Heated Bed",
+          "description": "PEI-coated spring steel removable print sheet"
+        },
+        {
+          "id": "frame",
+          "label": "Aluminium Frame",
+          "description": "Rigid i3-style aluminium extrusion frame"
+        },
+        {
+          "id": "feeder",
+          "label": "Extruder",
+          "description": "Bondtech dual-drive extruder assembly"
+        }
+      ]
+    },
+    "image": {
+      "src": "/img/equipment/printer-fdm-prusa.svg",
+      "alt": "Representative schematic illustration of Prusa MK4 FDM 3D Printer",
+      "credit": "Illustration generated for LabLink",
+      "licence": "CC0",
+      "sourceUrl": null
+    }
   },
   {
     "id": "printer-resin-elegoo",
     "name": "Elegoo Saturn 3 Ultra Resin 3D Printer",
     "department": "Mechanical",
     "lab": "FABRICATION_LAB",
-    "location": {"building": "Mech Block", "floor": 1},
+    "location": {
+      "building": "Mech Block",
+      "floor": 1
+    },
     "category": "3d-printer",
     "tier": 2,
-    "specTags": ["3D-printing", "resin", "MSLA", "high-resolution", "prototyping", "dental", "jewellery", "mechanical"],
+    "specTags": [
+      "3D-printing",
+      "resin",
+      "MSLA",
+      "high-resolution",
+      "prototyping",
+      "dental",
+      "jewellery",
+      "mechanical"
+    ],
     "description": "High-resolution MSLA resin printer for detailed miniatures, dental models, jewellery, and fine-feature mechanical parts. 12K mono LCD for 19 μm XY resolution.",
     "datasheetSummary": "218x123x260mm, 12K mono LCD, 19μm XY resolution, 50μm Z resolution, UV 405nm.",
-    "softwareInstalled": ["CHITUBOX Pro", "Lychee Slicer"],
+    "softwareInstalled": [
+      "CHITUBOX Pro",
+      "Lychee Slicer"
+    ],
     "status": "available",
     "requiresApproval": true,
     "riskLevel": "medium",
     "prerequisiteModules": [],
-    "compatibleWith": ["printer-fdm-prusa"],
+    "compatibleWith": [
+      "printer-fdm-prusa"
+    ],
     "equivalentGroup": "3d-printer",
     "usageSteps": [
       "Wear nitrile gloves before handling resin",
@@ -374,30 +890,78 @@
       "Level FEP film before every print",
       "Wash in IPA, cure under UV lamp 2 min per side"
     ],
-    "safetyNotes": ["Resin is an irritant – gloves and goggles mandatory", "Work in ventilated area", "Dispose of resin waste via hazardous waste collection"],
-    "model3d": {"kind": "3d_printer", "parts": [
-      {"id": "lcd", "label": "12K Mono LCD", "description": "12K monochrome LCD exposure screen"},
-      {"id": "vat", "label": "Resin Vat", "description": "FEP-film resin vat"},
-      {"id": "platform", "label": "Build Platform", "description": "Aluminium build plate with Z axis"}
-    ]}
+    "safetyNotes": [
+      "Resin is an irritant – gloves and goggles mandatory",
+      "Work in ventilated area",
+      "Dispose of resin waste via hazardous waste collection"
+    ],
+    "model3d": {
+      "kind": "3d_printer",
+      "parts": [
+        {
+          "id": "lcd",
+          "label": "12K Mono LCD",
+          "description": "12K monochrome LCD exposure screen"
+        },
+        {
+          "id": "vat",
+          "label": "Resin Vat",
+          "description": "FEP-film resin vat"
+        },
+        {
+          "id": "platform",
+          "label": "Build Platform",
+          "description": "Aluminium build plate with Z axis"
+        }
+      ]
+    },
+    "image": {
+      "src": "/img/equipment/printer-resin-elegoo.svg",
+      "alt": "Representative schematic illustration of Elegoo Saturn 3 Ultra Resin 3D Printer",
+      "credit": "Illustration generated for LabLink",
+      "licence": "CC0",
+      "sourceUrl": null
+    }
   },
   {
     "id": "fpga-xilinx-vcu128",
     "name": "Xilinx VCU128 FPGA Evaluation Board",
     "department": "ECE",
     "lab": "DIGITAL_DESIGN_LAB",
-    "location": {"building": "ECE Block", "floor": 3},
+    "location": {
+      "building": "ECE Block",
+      "floor": 3
+    },
     "category": "fpga",
     "tier": 3,
-    "specTags": ["FPGA", "Xilinx", "Virtex", "hardware-accelerator", "HLS", "DSP", "5G", "signal-processing", "PCB"],
+    "specTags": [
+      "FPGA",
+      "Xilinx",
+      "Virtex",
+      "hardware-accelerator",
+      "HLS",
+      "DSP",
+      "5G",
+      "signal-processing",
+      "PCB"
+    ],
     "description": "Xilinx Virtex UltraScale+ FPGA board for high-speed digital design, hardware acceleration, 5G signal processing, and HLS-based AI inference. Supports 100G Ethernet and PCIe Gen4.",
     "datasheetSummary": "VU37P FPGA, 2.5M LUTs, HBM2 8GB, QSFP28 100G, PCIe Gen4 x16, 4GB DDR4.",
-    "softwareInstalled": ["Vivado 2023.2", "Vitis HLS", "MATLAB HDL Toolbox"],
+    "softwareInstalled": [
+      "Vivado 2023.2",
+      "Vitis HLS",
+      "MATLAB HDL Toolbox"
+    ],
     "status": "available",
     "requiresApproval": true,
     "riskLevel": "medium",
-    "prerequisiteModules": ["EC301", "EC401"],
-    "compatibleWith": ["psu-bench-30v"],
+    "prerequisiteModules": [
+      "EC301",
+      "EC401"
+    ],
+    "compatibleWith": [
+      "psu-bench-30v"
+    ],
     "equivalentGroup": null,
     "usageSteps": [
       "Connect 12V external power and USB-JTAG cable",
@@ -405,25 +969,67 @@
       "Program bitstream via JTAG",
       "Verify ILA probes for in-circuit debug"
     ],
-    "safetyNotes": ["ESD precautions: ground mat and wrist strap required", "Do not connect/disconnect peripherals while powered", "FPGA can draw 150W – ensure adequate airflow"],
-    "model3d": {"kind": "dev_board", "parts": [
-      {"id": "fpga", "label": "FPGA Chip", "description": "Xilinx Virtex UltraScale+ VU37P FPGA"},
-      {"id": "hbm", "label": "HBM2 Memory", "description": "8 GB High Bandwidth Memory stack"},
-      {"id": "qsfp", "label": "QSFP28 Ports", "description": "100G Ethernet QSFP28 ports"}
-    ]}
+    "safetyNotes": [
+      "ESD precautions: ground mat and wrist strap required",
+      "Do not connect/disconnect peripherals while powered",
+      "FPGA can draw 150W – ensure adequate airflow"
+    ],
+    "model3d": {
+      "kind": "dev_board",
+      "parts": [
+        {
+          "id": "fpga",
+          "label": "FPGA Chip",
+          "description": "Xilinx Virtex UltraScale+ VU37P FPGA"
+        },
+        {
+          "id": "hbm",
+          "label": "HBM2 Memory",
+          "description": "8 GB High Bandwidth Memory stack"
+        },
+        {
+          "id": "qsfp",
+          "label": "QSFP28 Ports",
+          "description": "100G Ethernet QSFP28 ports"
+        }
+      ]
+    },
+    "image": {
+      "src": "/img/equipment/fpga-xilinx-vcu128.svg",
+      "alt": "Representative schematic illustration of Xilinx VCU128 FPGA Evaluation Board",
+      "credit": "Illustration generated for LabLink",
+      "licence": "CC0",
+      "sourceUrl": null
+    }
   },
   {
     "id": "rpi5-kit",
     "name": "Raspberry Pi 5 Prototyping Kit",
     "department": "CSE",
     "lab": "EMBEDDED_LAB",
-    "location": {"building": "CS Block", "floor": 1},
+    "location": {
+      "building": "CS Block",
+      "floor": 1
+    },
     "category": "dev-board",
     "tier": 1,
-    "specTags": ["Raspberry-Pi", "embedded", "IoT", "prototyping", "Linux", "GPIO", "beginner-friendly"],
+    "specTags": [
+      "Raspberry-Pi",
+      "embedded",
+      "IoT",
+      "prototyping",
+      "Linux",
+      "GPIO",
+      "beginner-friendly"
+    ],
     "description": "Raspberry Pi 5 kit with GPIO breakout, breadboard, sensor pack, and camera. Perfect for IoT prototyping, home automation, embedded Linux projects, and beginner computer vision.",
     "datasheetSummary": "RPi5 4GB, GPIO breakout, 32GB microSD, breadboard, sensor kit (DHT22, ultrasonic, PIR), RPi Camera v3.",
-    "softwareInstalled": ["Raspberry Pi OS", "Python 3.11", "pigpio", "OpenCV"],
+    "softwareInstalled": [
+      "Raspberry Pi OS",
+      "Python 3.11",
+      "pigpio",
+      "OpenCV"
+    ],
     "status": "available",
     "requiresApproval": false,
     "riskLevel": "low",
@@ -436,25 +1042,63 @@
       "Use Python pigpio library for GPIO control",
       "Camera: libcamera-still -o test.jpg"
     ],
-    "safetyNotes": ["GPIO pins are 3.3V only – do not connect 5V signals directly", "Do not power via GPIO 5V from USB simultaneously"],
-    "model3d": {"kind": "dev_board", "parts": [
-      {"id": "board", "label": "RPi5 Board", "description": "Raspberry Pi 5 4GB SBC"},
-      {"id": "gpio", "label": "GPIO Header", "description": "40-pin GPIO expansion header"},
-      {"id": "cam", "label": "Camera Port", "description": "CSI camera connector"}
-    ]}
+    "safetyNotes": [
+      "GPIO pins are 3.3V only – do not connect 5V signals directly",
+      "Do not power via GPIO 5V from USB simultaneously"
+    ],
+    "model3d": {
+      "kind": "dev_board",
+      "parts": [
+        {
+          "id": "board",
+          "label": "RPi5 Board",
+          "description": "Raspberry Pi 5 4GB SBC"
+        },
+        {
+          "id": "gpio",
+          "label": "GPIO Header",
+          "description": "40-pin GPIO expansion header"
+        },
+        {
+          "id": "cam",
+          "label": "Camera Port",
+          "description": "CSI camera connector"
+        }
+      ]
+    },
+    "image": {
+      "src": "/img/equipment/rpi5-kit.svg",
+      "alt": "Representative schematic illustration of Raspberry Pi 5 Prototyping Kit",
+      "credit": "Illustration generated for LabLink",
+      "licence": "CC0",
+      "sourceUrl": null
+    }
   },
   {
     "id": "arduino-mega-kit",
     "name": "Arduino Mega 2560 Starter Kit",
     "department": "ECE",
     "lab": "ELECTRONICS_LAB",
-    "location": {"building": "ECE Block", "floor": 1},
+    "location": {
+      "building": "ECE Block",
+      "floor": 1
+    },
     "category": "dev-board",
     "tier": 1,
-    "specTags": ["Arduino", "microcontroller", "prototyping", "embedded", "IoT", "beginner-friendly", "PCB"],
+    "specTags": [
+      "Arduino",
+      "microcontroller",
+      "prototyping",
+      "embedded",
+      "IoT",
+      "beginner-friendly",
+      "PCB"
+    ],
     "description": "Arduino Mega 2560 with full starter kit: breadboard, components, motor drivers, and sensors. Ideal for embedded systems coursework, PCB prototyping, and IoT projects.",
     "datasheetSummary": "ATmega2560, 54 digital I/O, 16 analogue inputs, 4 UARTs, kit includes LCD, motor driver, sensor pack.",
-    "softwareInstalled": ["Arduino IDE 2"],
+    "softwareInstalled": [
+      "Arduino IDE 2"
+    ],
     "status": "available",
     "requiresApproval": false,
     "riskLevel": "low",
@@ -467,21 +1111,52 @@
       "Select board: Arduino Mega 2560",
       "Upload blink sketch to verify"
     ],
-    "safetyNotes": ["5V logic – incompatible with 3.3V-only devices", "Motor driver: check polarity before power-on"],
-    "model3d": {"kind": "dev_board", "parts": [
-      {"id": "board", "label": "Arduino Mega", "description": "ATmega2560 microcontroller board"},
-      {"id": "header", "label": "Pin Headers", "description": "Digital and analogue I/O headers"}
-    ]}
+    "safetyNotes": [
+      "5V logic – incompatible with 3.3V-only devices",
+      "Motor driver: check polarity before power-on"
+    ],
+    "model3d": {
+      "kind": "dev_board",
+      "parts": [
+        {
+          "id": "board",
+          "label": "Arduino Mega",
+          "description": "ATmega2560 microcontroller board"
+        },
+        {
+          "id": "header",
+          "label": "Pin Headers",
+          "description": "Digital and analogue I/O headers"
+        }
+      ]
+    },
+    "image": {
+      "src": "/img/equipment/arduino-mega-kit.svg",
+      "alt": "Representative schematic illustration of Arduino Mega 2560 Starter Kit",
+      "credit": "Illustration generated for LabLink",
+      "licence": "CC0",
+      "sourceUrl": null
+    }
   },
   {
     "id": "solder-weller-we1010",
     "name": "Weller WE1010 Soldering Station",
     "department": "ECE",
     "lab": "ELECTRONICS_LAB",
-    "location": {"building": "ECE Block", "floor": 1},
+    "location": {
+      "building": "ECE Block",
+      "floor": 1
+    },
     "category": "soldering",
     "tier": 1,
-    "specTags": ["soldering", "PCB", "electronics", "prototyping", "SMD", "through-hole"],
+    "specTags": [
+      "soldering",
+      "PCB",
+      "electronics",
+      "prototyping",
+      "SMD",
+      "through-hole"
+    ],
     "description": "Professional 70W temperature-controlled soldering station for PCB assembly, SMD rework, and through-hole soldering. Suitable for all electronics prototyping.",
     "datasheetSummary": "70W, 100-450°C, digital temperature display, ESD safe, interchangeable tips.",
     "softwareInstalled": [],
@@ -498,26 +1173,70 @@
       "Return to stand after each joint",
       "Tin and wipe tip, return to 180°C standby"
     ],
-    "safetyNotes": ["Tip reaches 450°C – risk of burns", "Use fume extractor – solder flux fumes are hazardous", "Never leave iron unattended at temperature"],
-    "model3d": {"kind": "soldering_station", "parts": [
-      {"id": "iron", "label": "Soldering Iron", "description": "70W ESD-safe soldering iron handle"},
-      {"id": "tip", "label": "Tip", "description": "Exchangeable precision tip (default: 1mm chisel)"},
-      {"id": "stand", "label": "Iron Stand", "description": "Safety stand with sponge and brass wool tip cleaner"},
-      {"id": "station", "label": "Control Station", "description": "Digital temperature controller unit"}
-    ]}
+    "safetyNotes": [
+      "Tip reaches 450°C – risk of burns",
+      "Use fume extractor – solder flux fumes are hazardous",
+      "Never leave iron unattended at temperature"
+    ],
+    "model3d": {
+      "kind": "soldering_station",
+      "parts": [
+        {
+          "id": "iron",
+          "label": "Soldering Iron",
+          "description": "70W ESD-safe soldering iron handle"
+        },
+        {
+          "id": "tip",
+          "label": "Tip",
+          "description": "Exchangeable precision tip (default: 1mm chisel)"
+        },
+        {
+          "id": "stand",
+          "label": "Iron Stand",
+          "description": "Safety stand with sponge and brass wool tip cleaner"
+        },
+        {
+          "id": "station",
+          "label": "Control Station",
+          "description": "Digital temperature controller unit"
+        }
+      ]
+    },
+    "image": {
+      "src": "/img/equipment/solder-weller-we1010.svg",
+      "alt": "Representative schematic illustration of Weller WE1010 Soldering Station",
+      "credit": "Illustration generated for LabLink",
+      "licence": "CC0",
+      "sourceUrl": null
+    }
   },
   {
     "id": "vr-headset-quest3",
     "name": "Meta Quest 3 VR Headset",
     "department": "CSE",
     "lab": "VR_XR_LAB",
-    "location": {"building": "CS Block", "floor": 2},
+    "location": {
+      "building": "CS Block",
+      "floor": 2
+    },
     "category": "vr-headset",
     "tier": 2,
-    "specTags": ["VR", "XR", "mixed-reality", "spatial-computing", "Unity", "Unreal", "prototyping"],
+    "specTags": [
+      "VR",
+      "XR",
+      "mixed-reality",
+      "spatial-computing",
+      "Unity",
+      "Unreal",
+      "prototyping"
+    ],
     "description": "Standalone VR/MR headset for spatial computing research, XR application development, and immersive simulations. Supports Unity and Unreal Engine development via link cable.",
     "datasheetSummary": "Snapdragon XR2 Gen2, 2064x2208 per eye, 90/120Hz, passthrough MR, hand tracking, Wi-Fi 6E.",
-    "softwareInstalled": ["Meta Developer Hub", "Unity Link"],
+    "softwareInstalled": [
+      "Meta Developer Hub",
+      "Unity Link"
+    ],
     "status": "available",
     "requiresApproval": false,
     "riskLevel": "low",
@@ -531,29 +1250,72 @@
       "Connect link cable for PC development",
       "Clean face gasket with wipe after use"
     ],
-    "safetyNotes": ["Minimum 1m safety radius when in use", "Do not use for more than 30 min without break", "Clean lenses only with the microfibre cloth provided"],
-    "model3d": {"kind": "generic", "parts": [
-      {"id": "headset", "label": "Headset", "description": "Meta Quest 3 HMD with pancake lenses"},
-      {"id": "controllers", "label": "Touch Plus Controllers", "description": "6DoF controller pair"}
-    ]}
+    "safetyNotes": [
+      "Minimum 1m safety radius when in use",
+      "Do not use for more than 30 min without break",
+      "Clean lenses only with the microfibre cloth provided"
+    ],
+    "model3d": {
+      "kind": "generic",
+      "parts": [
+        {
+          "id": "headset",
+          "label": "Headset",
+          "description": "Meta Quest 3 HMD with pancake lenses"
+        },
+        {
+          "id": "controllers",
+          "label": "Touch Plus Controllers",
+          "description": "6DoF controller pair"
+        }
+      ]
+    },
+    "image": {
+      "src": "/img/equipment/vr-headset-quest3.svg",
+      "alt": "Representative schematic illustration of Meta Quest 3 VR Headset",
+      "credit": "Illustration generated for LabLink",
+      "licence": "CC0",
+      "sourceUrl": null
+    }
   },
   {
     "id": "robotic-arm-ur5e",
     "name": "Universal Robots UR5e Collaborative Robot Arm",
     "department": "Robotics",
     "lab": "ROBOTICS_LAB",
-    "location": {"building": "Robotics Block", "floor": 1},
+    "location": {
+      "building": "Robotics Block",
+      "floor": 1
+    },
     "category": "robotic-arm",
     "tier": 3,
-    "specTags": ["robotics", "cobot", "manipulation", "ROS", "automation", "pick-place", "assembly"],
+    "specTags": [
+      "robotics",
+      "cobot",
+      "manipulation",
+      "ROS",
+      "automation",
+      "pick-place",
+      "assembly"
+    ],
     "description": "6-DOF collaborative robot arm for pick-and-place, assembly, and manipulation research. Force-torque sensing for safe human collaboration. ROS2 MoveIt integration for motion planning.",
     "datasheetSummary": "5 kg payload, 850mm reach, ±0.03mm repeatability, force-torque sensor, Polyscope UI, ROS2 driver.",
-    "softwareInstalled": ["Polyscope", "ROS2 UR driver", "MoveIt2"],
+    "softwareInstalled": [
+      "Polyscope",
+      "ROS2 UR driver",
+      "MoveIt2"
+    ],
     "status": "approval_required",
     "requiresApproval": true,
     "riskLevel": "high",
-    "prerequisiteModules": ["RB201", "RB301"],
-    "compatibleWith": ["lidar-ouster-os1", "camera-realsense-d435"],
+    "prerequisiteModules": [
+      "RB201",
+      "RB301"
+    ],
+    "compatibleWith": [
+      "lidar-ouster-os1",
+      "camera-realsense-d435"
+    ],
     "equivalentGroup": null,
     "usageSteps": [
       "Complete UR5e safety training (certificate required)",
@@ -562,30 +1324,79 @@
       "Run in reduced speed (25%) for new programs",
       "Emergency stop accessible at all times"
     ],
-    "safetyNotes": ["High risk: mandatory safety training before use", "Define safety planes and speed limits in program", "Never bypass e-stop", "Minimum 1.5m clearance during operation"],
-    "model3d": {"kind": "generic", "parts": [
-      {"id": "base", "label": "Base Joint (J1)", "description": "Rotating base joint, full 360° rotation"},
-      {"id": "elbow", "label": "Elbow Joint (J3)", "description": "Main elbow joint with force sensing"},
-      {"id": "wrist", "label": "Wrist (J4-J6)", "description": "3-axis wrist with tool flange"},
-      {"id": "teach", "label": "Teach Pendant", "description": "PolyScope touch screen teach pendant with e-stop"}
-    ]}
+    "safetyNotes": [
+      "High risk: mandatory safety training before use",
+      "Define safety planes and speed limits in program",
+      "Never bypass e-stop",
+      "Minimum 1.5m clearance during operation"
+    ],
+    "model3d": {
+      "kind": "generic",
+      "parts": [
+        {
+          "id": "base",
+          "label": "Base Joint (J1)",
+          "description": "Rotating base joint, full 360° rotation"
+        },
+        {
+          "id": "elbow",
+          "label": "Elbow Joint (J3)",
+          "description": "Main elbow joint with force sensing"
+        },
+        {
+          "id": "wrist",
+          "label": "Wrist (J4-J6)",
+          "description": "3-axis wrist with tool flange"
+        },
+        {
+          "id": "teach",
+          "label": "Teach Pendant",
+          "description": "PolyScope touch screen teach pendant with e-stop"
+        }
+      ]
+    },
+    "image": {
+      "src": "/img/equipment/robotic-arm-ur5e.svg",
+      "alt": "Representative schematic illustration of Universal Robots UR5e Collaborative Robot Arm",
+      "credit": "Illustration generated for LabLink",
+      "licence": "CC0",
+      "sourceUrl": null
+    }
   },
   {
     "id": "cnc-router-shapoko",
     "name": "Shapeoko 5 Pro CNC Router",
     "department": "Mechanical",
     "lab": "FABRICATION_LAB",
-    "location": {"building": "Mech Block", "floor": 1},
+    "location": {
+      "building": "Mech Block",
+      "floor": 1
+    },
     "category": "cnc",
     "tier": 2,
-    "specTags": ["CNC", "machining", "milling", "fabrication", "PCB", "aluminium", "wood", "mechanical"],
+    "specTags": [
+      "CNC",
+      "machining",
+      "milling",
+      "fabrication",
+      "PCB",
+      "aluminium",
+      "wood",
+      "mechanical"
+    ],
     "description": "High-rigidity CNC router for precision milling of aluminium, PCB, wood, and plastics. Suitable for mechanical part fabrication, PCB milling for rapid prototyping, and custom enclosure manufacture.",
     "datasheetSummary": "838x838mm cutting area, 10,000 RPM spindle, aluminium extrusion frame, Carbide Motion control.",
-    "softwareInstalled": ["Carbide Create", "Carbide Motion", "FlatCAM"],
+    "softwareInstalled": [
+      "Carbide Create",
+      "Carbide Motion",
+      "FlatCAM"
+    ],
     "status": "available",
     "requiresApproval": true,
     "riskLevel": "high",
-    "prerequisiteModules": ["ME201"],
+    "prerequisiteModules": [
+      "ME201"
+    ],
     "compatibleWith": [],
     "equivalentGroup": null,
     "usageSteps": [
@@ -595,30 +1406,74 @@
       "Run job with router guard in place",
       "Vacuum chips after job completion"
     ],
-    "safetyNotes": ["High risk: rotating cutter causes severe injury", "Eye protection and hearing protection mandatory", "Never leave running unattended", "Emergency stop within reach at all times"],
-    "model3d": {"kind": "generic", "parts": [
-      {"id": "spindle", "label": "Spindle", "description": "High-speed trim router spindle up to 30,000 RPM"},
-      {"id": "bed", "label": "Cutting Bed", "description": "MDF wasteboard spoilboard"},
-      {"id": "controller", "label": "Controller", "description": "Carbide Motion Bluetooth controller"}
-    ]}
+    "safetyNotes": [
+      "High risk: rotating cutter causes severe injury",
+      "Eye protection and hearing protection mandatory",
+      "Never leave running unattended",
+      "Emergency stop within reach at all times"
+    ],
+    "model3d": {
+      "kind": "generic",
+      "parts": [
+        {
+          "id": "spindle",
+          "label": "Spindle",
+          "description": "High-speed trim router spindle up to 30,000 RPM"
+        },
+        {
+          "id": "bed",
+          "label": "Cutting Bed",
+          "description": "MDF wasteboard spoilboard"
+        },
+        {
+          "id": "controller",
+          "label": "Controller",
+          "description": "Carbide Motion Bluetooth controller"
+        }
+      ]
+    },
+    "image": {
+      "src": "/img/equipment/cnc-router-shapoko.svg",
+      "alt": "Representative schematic illustration of Shapeoko 5 Pro CNC Router",
+      "credit": "Illustration generated for LabLink",
+      "licence": "CC0",
+      "sourceUrl": null
+    }
   },
   {
     "id": "func-gen-keysight",
     "name": "Keysight 33600A Waveform Generator",
     "department": "ECE",
     "lab": "ELECTRONICS_LAB",
-    "location": {"building": "ECE Block", "floor": 1},
+    "location": {
+      "building": "ECE Block",
+      "floor": 1
+    },
     "category": "function-generator",
     "tier": 1,
-    "specTags": ["function-generator", "waveform", "signal-analysis", "ECE", "RF", "testing"],
+    "specTags": [
+      "function-generator",
+      "waveform",
+      "signal-analysis",
+      "ECE",
+      "RF",
+      "testing"
+    ],
     "description": "Dual-channel arbitrary waveform generator for generating test signals in PCB testing, amplifier characterisation, and filter testing. 80 MHz bandwidth, arbitrary waveform upload.",
     "datasheetSummary": "2 channels, 80 MHz, 1 GSa/s, 16M sample memory, AM/FM/PM/ASK/FSK modulation, USB/LAN/GPIB.",
-    "softwareInstalled": ["Keysight BenchVue"],
+    "softwareInstalled": [
+      "Keysight BenchVue"
+    ],
     "status": "available",
     "requiresApproval": false,
     "riskLevel": "low",
-    "prerequisiteModules": ["EC101"],
-    "compatibleWith": ["osc-tek-mso64", "osc-keysight-dsox1204g"],
+    "prerequisiteModules": [
+      "EC101"
+    ],
+    "compatibleWith": [
+      "osc-tek-mso64",
+      "osc-keysight-dsox1204g"
+    ],
     "equivalentGroup": null,
     "usageSteps": [
       "Set frequency, amplitude, and waveform type",
@@ -626,22 +1481,55 @@
       "Use modulation menu for AM/FM signals",
       "Load arbitrary waveform via USB"
     ],
-    "safetyNotes": ["Output max 10 Vpp into 50Ω", "Terminate output when not in use"],
-    "model3d": {"kind": "generic", "parts": [
-      {"id": "ch1out", "label": "CH1 Output", "description": "Channel 1 BNC output"},
-      {"id": "ch2out", "label": "CH2 Output", "description": "Channel 2 BNC output"},
-      {"id": "display", "label": "Display", "description": "5\" colour TFT display"}
-    ]}
+    "safetyNotes": [
+      "Output max 10 Vpp into 50Ω",
+      "Terminate output when not in use"
+    ],
+    "model3d": {
+      "kind": "generic",
+      "parts": [
+        {
+          "id": "ch1out",
+          "label": "CH1 Output",
+          "description": "Channel 1 BNC output"
+        },
+        {
+          "id": "ch2out",
+          "label": "CH2 Output",
+          "description": "Channel 2 BNC output"
+        },
+        {
+          "id": "display",
+          "label": "Display",
+          "description": "5\" colour TFT display"
+        }
+      ]
+    },
+    "image": {
+      "src": "/img/equipment/func-gen-keysight.svg",
+      "alt": "Representative schematic illustration of Keysight 33600A Waveform Generator",
+      "credit": "Illustration generated for LabLink",
+      "licence": "CC0",
+      "sourceUrl": null
+    }
   },
   {
     "id": "probe-set-tek",
     "name": "Tektronix TPP0502 500 MHz Probe Set",
     "department": "ECE",
     "lab": "RF_SIGNALS_LAB",
-    "location": {"building": "ECE Block", "floor": 2},
+    "location": {
+      "building": "ECE Block",
+      "floor": 2
+    },
     "category": "probe",
     "tier": 1,
-    "specTags": ["probe", "oscilloscope", "ECE", "signal-analysis"],
+    "specTags": [
+      "probe",
+      "oscilloscope",
+      "ECE",
+      "signal-analysis"
+    ],
     "description": "500 MHz passive voltage probe set compatible with Tektronix and Keysight oscilloscopes. Includes 4 probes with ground leads, probe tips, and storage case.",
     "datasheetSummary": "500 MHz, 10x/1x, 300 Vrms, compatible with most benchtop oscilloscopes.",
     "softwareInstalled": [],
@@ -649,7 +1537,10 @@
     "requiresApproval": false,
     "riskLevel": "low",
     "prerequisiteModules": [],
-    "compatibleWith": ["osc-tek-mso64", "osc-keysight-dsox1204g"],
+    "compatibleWith": [
+      "osc-tek-mso64",
+      "osc-keysight-dsox1204g"
+    ],
     "equivalentGroup": null,
     "usageSteps": [
       "Clip ground lead first to circuit ground",
@@ -657,21 +1548,53 @@
       "Compensate probe using CAL output on oscilloscope",
       "Connect probe tip to signal point"
     ],
-    "safetyNotes": ["Rated 300 Vrms max at 10x attenuation", "Ground must be connected before signal"],
-    "model3d": {"kind": "generic", "parts": [
-      {"id": "tip", "label": "Probe Tip", "description": "Fine probe tip with hook attachment"},
-      {"id": "ground", "label": "Ground Clip", "description": "Alligator ground clip"}
-    ]}
+    "safetyNotes": [
+      "Rated 300 Vrms max at 10x attenuation",
+      "Ground must be connected before signal"
+    ],
+    "model3d": {
+      "kind": "generic",
+      "parts": [
+        {
+          "id": "tip",
+          "label": "Probe Tip",
+          "description": "Fine probe tip with hook attachment"
+        },
+        {
+          "id": "ground",
+          "label": "Ground Clip",
+          "description": "Alligator ground clip"
+        }
+      ]
+    },
+    "image": {
+      "src": "/img/equipment/probe-set-tek.svg",
+      "alt": "Representative schematic illustration of Tektronix TPP0502 500 MHz Probe Set",
+      "credit": "Illustration generated for LabLink",
+      "licence": "CC0",
+      "sourceUrl": null
+    }
   },
   {
     "id": "spectrum-analyser-rohde",
     "name": "Rohde and Schwarz Spectrum Analyser alias",
     "department": "ECE",
     "lab": "RF_SIGNALS_LAB",
-    "location": {"building": "ECE Block", "floor": 2},
+    "location": {
+      "building": "ECE Block",
+      "floor": 2
+    },
     "category": "spectrum-analyser",
     "tier": 2,
-    "specTags": ["spectrum-analyser", "RF", "mmWave", "5G", "antenna", "signal-analysis", "frequency-domain"],
+    "specTags": [
+      "spectrum-analyser",
+      "RF",
+      "mmWave",
+      "5G",
+      "antenna",
+      "signal-analysis",
+      "frequency-domain"
+    ],
     "description": "Alias record linking to FPC1500 – used for compatibleWith references.",
     "datasheetSummary": "See spectrum-rohde-fpc1500.",
     "softwareInstalled": [],
@@ -679,10 +1602,22 @@
     "requiresApproval": false,
     "riskLevel": "low",
     "prerequisiteModules": [],
-    "compatibleWith": ["vna-keysight-p9374a"],
+    "compatibleWith": [
+      "vna-keysight-p9374a"
+    ],
     "equivalentGroup": "rf-measurement",
     "usageSteps": [],
     "safetyNotes": [],
-    "model3d": {"kind": "generic", "parts": []}
+    "model3d": {
+      "kind": "generic",
+      "parts": []
+    },
+    "image": {
+      "src": "/img/equipment/spectrum-analyser-rohde.svg",
+      "alt": "Representative schematic illustration of Rohde and Schwarz Spectrum Analyser alias",
+      "credit": "Illustration generated for LabLink",
+      "licence": "CC0",
+      "sourceUrl": null
+    }
   }
 ]

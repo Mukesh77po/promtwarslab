@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="300" viewBox="0 0 400 300" role="img" aria-label="Rigol DP832 Bench Power Supply illustration">
+  <defs>
+    <linearGradient id="bg-psu-bench-30v" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f172a"/>
+      <stop offset="100%" stop-color="#1e293b"/>
+    </linearGradient>
+  </defs>
+  <rect width="400" height="300" rx="12" fill="url(#bg-psu-bench-30v)"/>
+  
+        <rect x="60" y="60" width="280" height="175" rx="10" fill="#1e293b" stroke="#38bdf8" stroke-width="2"/>
+        <circle cx="140" cy="140" r="36" fill="#0f172a" stroke="#0284c7" stroke-width="2"/>
+        <circle cx="240" cy="140" r="24" fill="#0f172a" stroke="#38bdf8" stroke-width="2"/>
+        <line x1="80" y1="200" x2="320" y2="200" stroke="#64748b" stroke-width="3"/>
+      
+  <text x="20" y="280" fill="#94a3b8" font-family="system-ui, -apple-system, sans-serif" font-size="12">Rigol DP832 Bench Power Supply</text>
+</svg>

@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="300" viewBox="0 0 400 300" role="img" aria-label="Meta Quest 3 VR Headset illustration">
+  <defs>
+    <linearGradient id="bg-vr-headset-quest3" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f172a"/>
+      <stop offset="100%" stop-color="#1e293b"/>
+    </linearGradient>
+  </defs>
+  <rect width="400" height="300" rx="12" fill="url(#bg-vr-headset-quest3)"/>
+  
+        <rect x="70" y="80" width="260" height="130" rx="40" fill="#0f172a" stroke="#06b6d4" stroke-width="2.5"/>
+        <circle cx="140" cy="145" r="26" fill="#1e293b" stroke="#22d3ee" stroke-width="2"/>
+        <circle cx="260" cy="145" r="26" fill="#1e293b" stroke="#22d3ee" stroke-width="2"/>
+        <circle cx="110" cy="110" r="6" fill="#67e8f9"/>
+        <circle cx="290" cy="110" r="6" fill="#67e8f9"/>
+        <circle cx="200" cy="190" r="6" fill="#67e8f9"/>
+        <path d="M70 145 C30 145, 30 70, 120 60" fill="none" stroke="#475569" stroke-width="10"/>
+        <path d="M330 145 C370 145, 370 70, 280 60" fill="none" stroke="#475569" stroke-width="10"/>
+      
+  <text x="20" y="280" fill="#94a3b8" font-family="system-ui, -apple-system, sans-serif" font-size="12">Meta Quest 3 VR Headset</text>
+</svg>
